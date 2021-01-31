@@ -3,16 +3,20 @@
   margin: 0;
 }
 
-.background {
+body {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #19a2ae;
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
   height: 100vh;
-  background: #19a2ae;
   font-family: "Kumbh Sans", sans-serif;
+  color: #2d3248;
   font-size: 18px;
   font-weight: 700;
+  z-index: 0;
 }
 
 h2, h3 {
@@ -26,29 +30,17 @@ h3 {
 
 hr {
   border-top: 1px solid #969696;
-  width: 350px;
-}
-
-.top__backgroundimg {
-  display: absolute;
-  top: 0;
-  right: 0;
-}
-
-.bottom_backgroundimg {
-  display: absolute;
-  left: 0;
-  bottom: 0;
+  width: 348px;
 }
 
 .profile__card {
-  display: inherit;
+  display: flex;
   flex-direction: column;
   background-color: white;
+  width: 100vw;
   max-width: 350px;
   border-radius: 10px;
-  max-height: 400px;
-  flex-grow: 1;
+  max-height: 380px;
   filter: drop-shadow(0 1px 1px #2d3248);
   z-index: 200;
 }
@@ -84,7 +76,7 @@ hr {
 .profile__card .card__bottom {
   display: inherit;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 10px;
   height: 100px;
 }
@@ -93,6 +85,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100px;
 }
 
 footer {
