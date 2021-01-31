@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #19a2ae;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h2, h3 {
+  padding: 5px;
+}
+
+h3 {
+  font-weight: 400;
+  color: #969696;
+}
+
+hr {
+  border-top: 1px solid #969696;
+  width: 350px;
+}
+
+.top__backgroundimg {
+  display: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bottom_backgroundimg {
+  display: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.profile__card {
+  display: inherit;
+  flex-direction: column;
+  background-color: white;
+  max-width: 350px;
+  border-radius: 10px;
+  max-height: 400px;
+  flex-grow: 1;
+  filter: drop-shadow(0 1px 1px #2d3248);
+  z-index: 200;
+}
+.profile__card .card__top {
+  height: 140px;
+}
+.profile__card .card__top .top__cardimg {
+  border-radius: 10px 10px 0px 0px;
+}
+.profile__card .card__middle {
+  display: inherit;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  height: 140px;
+}
+.profile__card .card__middle .profile__picture {
+  position: relative;
+  bottom: 58px;
+  width: max-content;
+  border-radius: 100%;
+  border: 6px solid white;
+  z-index: 2;
+}
+.profile__card .card__middle .nameagelocation {
+  position: relative;
+  bottom: 50px;
+}
+.profile__card .card__middle .name__age {
+  display: flex;
+}
+.profile__card .card__bottom {
+  display: inherit;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  height: 100px;
+}
+.profile__card .card__bottom .stats__container {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  margin-top: auto;
+}

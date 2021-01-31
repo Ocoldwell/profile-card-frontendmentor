@@ -1,35 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
-  26
-  London
+    <title>Frontend Mentor | Profile card component</title>
 
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="background">
+    <img
+      src="images/bg-pattern-top.svg"
+      alt="bottom-circle"
+      class="top__backgroundimg"
+    />
+    <main class="profile__card">
+      <div class="card__top">
+        <img
+          src="./images/bg-pattern-card.svg"
+          alt="concentric circles in blue" class="top__cardimg"
+        />
+      </div>
+      <div class="card__middle">
+        <img src="./images/image-victor.jpg" alt="Victor Crest Picture" class="profile__picture"/>
+        <div class="nameagelocation">
+          <span class="name__age">
+            <h2>Victor Crest</h2>
+            <h3>26</h3>
+          </span>
+          <h3>London</h3>
+        </div>
+      </div>
+      <hr>
+      <div class="card__bottom">
+        <span class="stats__container">
+          <h2>80K</h2>
+          <h3>Followers</h3>
+        </span>
+        <span class="stats__container">
+          <h2>803K</h2>
+          <h3>Likes</h3>
+        </span>
+        <span class="stats__container">
+          <h2>1.4K</h2>
+          <h3>Followers</h3>
+        </span>
+      </div>
+    </main>
+    <img
+      src="images/bg-pattern-bottom.svg"
+      alt="bottom-circle"
+      class="bottom_backgroundimg"
+    />
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ollie Coldwell</a>.
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,103 @@
+$primarycolor: hsl(185, 75%, 39%);
+$secondary-color: hsl(229, 23%, 23%);
+$tertiary-color: hsl(227, 10%, 46%);
+$font-color: hsl(0, 0%, 59%);
+$bold-font: 700;
+$normal-font: 400;
+$primary-font: "Kumbh Sans", sans-serif;
+$font-size: 18px;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: $primarycolor;
+  font-family: $primary-font;
+  font-size: $font-size;
+  font-weight: $bold-font;
+}
+h2, h3 {
+  padding: 5px;
+}
+
+h3 {
+  font-weight: $normal-font;
+  color: $font-color;
+}
+hr {
+  border-top: 1px solid $font-color;
+  width: 350px;
+}
+.top__backgroundimg {
+  display: absolute;
+  top: 0;
+  right: 0;
+}
+.bottom_backgroundimg {
+  display: absolute;
+  left: 0;
+  bottom: 0;
+}
+.profile__card {
+  display: inherit;
+  flex-direction: column;
+  background-color: white;
+  max-width: 350px;
+  border-radius: 10px;
+  max-height: 400px;
+  flex-grow: 1;
+  filter: drop-shadow(0 1px 1px $secondary-color);
+  z-index: 200;
+  .card__top {
+    height: 140px;
+    .top__cardimg {
+      border-radius: 10px 10px 0px 0px;
+    }
+  }
+  .card__middle {
+    display: inherit;
+    flex-direction: column;
+    justify-items:center;
+    align-items: center;
+    text-align: center;
+    height: 140px;
+    .profile__picture {
+      position: relative;
+      bottom: 58px;
+      width: max-content;
+      border-radius: 100%;
+      border: 6px solid white;
+      z-index: 2;
+    }
+    .nameagelocation{
+      position: relative;
+      bottom: 50px;
+    }
+    .name__age {
+      display: flex;
+    }
+  }
+  .card__bottom {
+    display: inherit;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    height: 100px;
+    .stats__container {
+      display: inherit;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+footer {
+  margin-top: auto;
+}
